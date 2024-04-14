@@ -1,0 +1,87 @@
+.profile-container {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.profile-header {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+
+.profile-info,
+.profile-bio {
+  margin: 15px 0;
+}
+
+/* 在ProfilePage.css中添加 */
+.linkedin-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.linkedin-link:hover {
+  background-color: #005582;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .linkedin-link {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linkedin-link {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .profile-header h1 {
+    font-size: 24px;
+  }
+
+  .profile-info h2,
+  .profile-bio h3 {
+    font-size: 18px;
+  }
+
+  .profile-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header h1 {
+    font-size: 20px;
+  }
+
+  .profile-info h2 {
+    font-size: 16px;
+  }
+
+  .profile-bio h3 {
+    font-size: 16px;
+  }
+
+  .profile-container {
+    padding: 10px;
+  }
+
+  .profile-info,
+  .profile-bio {
+    margin: 10px 0;
+  }
+}
